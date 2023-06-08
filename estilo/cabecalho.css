@@ -201,3 +201,9 @@ body{
     }
 
 }
+
+@media screen and (max-width: 320px){
+    .menu li .link-navigation, .menu li .link-navigation:hover{
+        font-size: 0.87em;
+    }
+}
