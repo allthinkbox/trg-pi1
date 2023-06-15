@@ -29,10 +29,6 @@
     --cor05: #CC6FAD;
 }
 
-body{
-    background-color: var(--cor04);
-}
-
 .header{
     position: relative;
     width: 100%;

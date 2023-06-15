@@ -1,7 +1,175 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    /* variáveis das fontes utilizadas no projeto: 
+        font-padrao -> para textos em geral; 
+        font-destaque -> para títulos de primeiro nível (h1); 
+        font-especial -> para botões e links; 
+        font-thinkbox -> para representar o projeto. */
+    --font-padrao: 'Roboto', sans-serif;
+    --font-destaque: 'Lobster', cursive;
+    --font-especial: 'Poppins', sans-serif;
+    --font-thinkbox: 'Dune Rise', sans-serif;
+
+    /* variáveis para representar as cores do projeto
+    com base na paleta de cores, que está no figma: os números são em ordem crescente das cores da esquerda para a direita, de cima para baixo, conforme a imagem da paleta de cores que está no figma. */
+    --cor01: #7F3E98;
+    --cor02: #AC81BC;
+    --cor03: #CDB4D7;
+    --cor04: #F1F1F1;
+    --cor05: #CC6FAD;
+}
+
 @font-face {
     font-family: 'Dune Rise';
     src: url(../fontes/Dune_Rise.otf) format('opentype');
     font-weight: normal;
+}
+
+@media (min-width:320px) {
+    body{
+        font-family: var(--font-padrao);
+        background-color: var(--cor04);
+    }
+    .banner-img{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    main{
+        padding-bottom: 15%;
+    }
+    h1{
+        font-family: var(--font-destaque);
+        color: var(--cor01);
+        font-size: 31px;
+        padding: 3% 3%;
+    }
+    article {
+        background-color: #fff;
+        background-image: url(../imagens/back-main.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 0 0 40% 35%;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+    article p{
+        text-align: justify;
+        font-size: 12px;
+        padding: 0 1%;
+        margin: 6% 3%;
+    }
+    .btn-saiba-mais{
+        width: 116px;
+        height: 32px;
+        margin: 5% 27%;
+        border: 1px solid var(--cor01);
+        border-radius: 20px;
+        background-color: var(--cor01);
+        color: var(--cor04);
+        font-size: 12px;
+        text-decoration: none;
+        z-index: 1;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .depoimentos{
+        height: 450px;
+        background-color: var(--cor01);
+    }
+    h2{
+        font-family: var(--font-destaque);
+        font-size: 31px;
+        text-align: center;
+        text-decoration: underline;
+        color: var(--cor04);
+        padding: 17% 0%;
+    }
+
+    aside{
+        margin: 10% auto;
+        background-color: var(--cor03);
+        border-top: 2px solid var(--cor02);
+        border-bottom: 2px solid var(--cor02);
+    }
+    h3{
+        font-family: var(--font-padrao);
+        padding: 5% 0%;
+        color: var(--cor02);
+        font-size: 12px;
+        text-align: center;
+    }
+    aside p{
+        font-size: 12px;
+        text-align: justify;
+        width: 80%;
+        margin: auto;
+        padding: 2% 0%;
+    }
+    aside a{
+        font-weight: bold;
+        color: var(--cor05);
+        text-decoration: none;
+    }
+    .contato-terapeuta{
+        width: 20px;
+        height: 20px;
+        margin:4% 45%;
+    }
+    
+    .img-motivação{
+        width: 80%;
+        margin: 5% 10%;
+    }
+    .agendar p{
+        width: 80%;
+        margin: 7% auto;
+        text-align: justify;
+        font-size: 12px;
+    }
+    .agendar-index{
+        width: 116px;
+        height: 32px;
+        margin: 5% 27%;
+        border: 1px solid var(--cor01);
+        border-radius: 20px;
+        background-color: var(--cor01);
+        color: var(--cor04);
+        font-size: 12px;
+        text-decoration: none;
+        z-index: 1;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media (min-width:480px) {
+    body{
+        background-color: aqua;
+    }
+}
+
+@media (min-width:600px) {
+    body{
+        background-color: aqua;
+    }
+}
+
+@media (min-width:801px) {
+    body{
+        background-color: aqua;
+    }
+}
+
+@media (min-width:1025px) {
+    body{
+        background-color: aqua;
+    }
+}
+
+@media (min-width:1251px) {
+    body{
+        background-color: aqua;
+    }
 }
