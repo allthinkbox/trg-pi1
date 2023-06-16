@@ -57,7 +57,7 @@
      width: 100%;
      margin: auto;
      padding: 0 0 50% 0; 
-     background-image: url(/imagens/back-sobre-mim.svg);
+     background-image: url(../imagens/back-sobre-mim.svg);
      background-repeat: no-repeat;
      background-size: contain;
      background-position: bottom;
