@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    /* variáveis das fontes utilizadas no projeto: 
+        font-padrao -> para textos em geral; 
+        font-destaque -> para títulos de primeiro nível (h1); 
+        font-especial -> para botões e links; 
+        font-thinkbox -> para representar o projeto. */
+    --font-padrao: 'Roboto', sans-serif;
+    --font-destaque: 'Lobster', cursive;
+    --font-especial: 'Poppins', sans-serif;
+    --font-thinkbox: 'Dune Rise', sans-serif;
+
+    /* variáveis para representar as cores do projeto
+    com base na paleta de cores, que está no figma: os números são em ordem crescente das cores da esquerda para a direita, de cima para baixo, conforme a imagem da paleta de cores que está no figma. */
+    --cor01: #7F3E98;
+    --cor02: #AC81BC;
+    --cor03: #CDB4D7;
+    --cor04: #F1F1F1;
+    --cor05: #CC6FAD;
+}
+
+@font-face {
+    font-family: 'Dune Rise';
+    src: url(../fontes/Dune_Rise.otf) format('opentype');
+    font-weight: normal;
+}
+
+@media (min-width:320px){
+    body{
+        background-color: var(--cor04);
+        font-family: var(--font-padrao);
+        font-size: 12px;
+        text-align: justify;
+    }
+
+/*PARTE INCOMPLETA -- FALTA FOTO DO LADO DO TITULO*/
+    main{
+        background-color: #fff;
+        padding: 10% 8%;
+    }
+    h1{
+        font-family: var(--font-destaque);
+        font-size: 31px;
+        text-align: left;
+        color: var(--cor01);
+        margin: 10% auto;
+    }
+    article{
+        margin: 10% 0;
+    }
+
+/* SEÇÃO DE  PACOTES DE SESSÕES*/
+    .card-preços{
+        width: 70%;
+        margin: 10% auto;
+        border: 1px solid var(--cor01);
+        border-radius: 30px;
+        padding: 10% 10%;
+    }
+    .card-preços h3{
+        font-family: var(--font-especial);
+        font-size: 19px;
+        font-weight: 600;
+        color: var(--cor01);
+        text-align: center;
+        margin: 5% 0;
+    }
+    .card-preços p{
+         font-size: 23px;
+         text-align: center;
+         margin: 0 0 5%;
+    }
+    .card-preços ul{
+        list-style-image: url(/imagens/list-img.svg);
+    }
+    .card-preços li{
+        margin: 8% 0;
+    }
+    .assinar{
+        width: 150px;
+        height: 33px;
+        margin: 9% 4%;
+        border: 1px solid var(--cor01);
+        border-radius: 40px;
+        background-color: var(--cor01);
+        color: #fff;
+    }
+
+/* TÍTULO DA "SEÇÃO ATENDIMETOS" E DA "SEÇÃO CONTATOS"*/
+    h2{
+        font-family: var(--font-destaque);
+        font-size: 31px;
+        text-align: center;
+        color: var(--cor01);
+        margin:0 0 10% 0%;
+        padding: 15% 0 0 0;
+    }
+    
+/*SEÇÃO ATENDIMETOS*/
+    .atendimento{
+        background-color: #fff;
+    }
+    .atendimento p{
+        width: 90%;
+        padding: 5% 0 10% 10%;
+    }
+    .atendimento img{
+        width: 100%;
+    }
+
+/*CONFIGURAÇÃO DA LISTA DE TRANSTORNOS*/
+    .transtornos-emocionais{
+        display: flex;
+        justify-content: center;
+    }
+    .transtornos-emocionais ul{
+        padding: 6%;
+    }
+    .transtornos-emocionais li{
+        margin:5% auto;
+    }
+    
+/*SEÇÃO "CONTATOS"*/
+    .contato{
+        width: 80%;
+        margin: 20% auto;
+        padding: 10% 0;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+    }
+    .gmail-btn-contato, .insta-btn-contato, .whats-btn-contato{
+        width: 70%;
+        height: 33px;
+        margin: 5% 0 5% 15%;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .gmail-btn-contato{
+        border: 1px solid #C71610;
+        color: #C71610;
+    }
+    .insta-btn-contato{
+        border: 1px solid #E1306C;
+        color: #E1306C;
+    }
+    .whats-btn-contato{
+        border: 1px solid #25D366;
+        color: #25D366;
+    }
+}
+@media (min-width:480px) {
+}
+@media (min-width:600px) {
+}
+@media (min-width:801px) {
+}
+@media (min-width:1025px) {
+}
+@media (min-width:1251px) {
+}
