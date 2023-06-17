@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="../index.html">
+            <a href="index.html">
                 <img src="../imagens/logo-trg.png" alt="Logo TRG">
             </a>
         </div>
@@ -24,13 +24,13 @@
             <div class="hamburguer"></div>
 
             <ul class="menu">
-                <li><a href="../index.html"><img class="img-logo-mobile" src="../imagens/favicon.png" alt="Logo TRG"></a></li>
-                <li><a class="link-navigation" href="o-que-e-trg.html">O que é TRG?</a></li>
-                <li><a class="link-navigation" href="agendar.html">Agendar</a></li>
-                <li><a class="link-navigation" href="sobre-mim.html">Sobre mim</a></li>
+                <li><a href="index.html"><img class="img-logo-mobile" src="../imagens/favicon.png" alt="Logo TRG"></a></li>
+                <li><a class="link-navigation" href="estrutura/o-que-e-trg.html">O que é TRG?</a></li>
+                <li><a class="link-navigation" href="estrutura/agendar.html">Agendar</a></li>
+                <li><a class="link-navigation" href="estrutura/sobre-mim.html">Sobre mim</a></li>
                 <li>
-                    <a href="#">
-                        <img class="img-logo-mobile" src="../imagens/logo-thinkbox.png" alt="Logo thinkbox">
+                    <a id="pai-logo-thinkbox" href="#">
+                        <img id="logo-thinkbox-mobile" class="img-logo-mobile" src="../imagens/logo-thinkbox.png" alt="Logo thinkbox">
                     </a>
                 </li>
             </ul>
@@ -81,9 +81,7 @@
     
         <!-- LINKS PARA AS REDES SOCIAIS DA CLIENTE -->
     
-        <a class="zap-link" href="https://api.whatsapp.com/send?phone=5511974429799" target="_blank" rel="external">
-            <p>(Hidden Information)</p>
-            <img class="contato-terapeuta" src="../imagens/Mask.png" alt="Contato da terapeuta">
+        <a class="zap-link" href="https://api.whatsapp.com/send?phone=5511974429799" target="_blank" rel="external">(Hidden Information)<img class="contato-terapeuta" src="../imagens/Mask.png" alt="Contato da terapeuta">
         </a>
         <a href="mailto:valdeneidepereira925@gmail.com" target="_blank" rel="external">valdeneidepereira925@gmail.com</a>
         <a href="https://www.instagram.com/valdeneide_sena/" target="_blank" rel="external">@valdeneide_sena</a>
@@ -104,7 +102,7 @@
         
         <!-- LISTA - SEÇÃO "BENEFÍCIOS" -->
         
-        <ul>
+        <ul class="lista-beneficios">
             <li>Qualidade de vida;</li>
             <li>Sono tranquilo;</li>
             <li>Desfrutar o presente;</li>
@@ -117,7 +115,7 @@
         
         <!--BOTÃO DO FIM DA PÁGINA DIRECIONANDO PARA A PÁGINA "AGENDAR" -->
         
-        <a href="/estrutura/agendar.html"><button class="agendar-trg-btn">Agendar</button></a>
+        <div class="agendar-trg-btn"><a href="agendar.html">Agendar</a></div>
     </section>
     
     <!--AQUI COMEÇA O RODAPÉ -->

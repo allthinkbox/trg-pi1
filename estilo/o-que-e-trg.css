@@ -28,56 +28,47 @@
     font-weight: normal;
 }
 @media (min-width:320px){
-    body{
-        background-color: var(--cor04);
-        font-family: var(--font-padrao);
-    }
-
 /*SEÇÃO "O QUÉ A TRG"*/
-    main{
-        width: 80%;
-        margin: auto;
-    }
     h1{
         font-family: var(--font-destaque);
-        font-size: 31px;
+        font-size: 1.6em;
         color: var(--cor01);
         text-align: center;
-        padding: 8% 0 3%;
+        margin-top: 30px;
     }
     .img-certificado{
         width: 140px;
         height: 118px;
-        margin: 0 22%;
+        margin: auto;
+        display: block;
     }
     article p{
-        font-size: 12px;
+        font-size: 0.9em;
         text-align: justify;
-        padding: 6% 0;
+        padding: 20px;
+        margin: 20px 0px;
+        line-height: 30px;
     }
 
 /* TÍTULO DAS SEÇÕES "COMO FUNCIONA" E "BENEFÍCIOS" */
     h2{
         font-family: var(--font-especial);
-        font-size: 16px;
+        font-size: 1.2em;
         color: var(--cor01);
-        margin: 0 0 4% 0;
+        padding: 20px 20px;
     }
 
 /*SEÇÃO "COMO FUNCIONA"*/
-    .como-funciona{
-        width: 80%;
-        margin: 10% auto;
-    }
     .como-funciona p{
+        font-size: 0.9em;
         text-align: justify;
-        font-size: 12px;
-        padding: 3% 0%;
+        padding: 20px;
+        margin: 20px 0px;
+        line-height: 30px;
     }
 
 /*CONTEÚDO PARA O USUÁRIOS COM DÚVIDAS*/
     aside{
-        margin: 10% auto;
         background-color: var(--cor03);
         border-top: 2px solid var(--cor02);
         border-bottom: 2px solid var(--cor02);
@@ -93,72 +84,73 @@
     aside p{
         font-size: 12px;
         text-align: justify;
-        width: 80%;
         margin: auto;
-        padding: 2% 0%;
+        padding: 2% 20px;
     }
 
 /*LINKS PARA AS REDES SOCIAIS DA CLIENTE*/
     aside a{
         font-size: 12px;
-        text-align: justify;
-        width: 80%;
-        margin: 0 10%;
         color: var(--cor05);
         text-decoration: none;
+        margin: 5px 20px;
     }
     .zap-link{
         display: flex;
-        justify-content: left;
+        justify-content: flex-start;
         align-items: center;
-    }
-    .zap-link p{
-        width: 130px;
-        margin: 0;
+        /* column-gap: 10px; */
     }
     .contato-terapeuta{
         width: 20px;
         height: 20px;
-        margin:0 1%;
+        margin: 0px 10px
     }
 
 /*SEÇÃO "BENEFÍCIOS"*/
-    .benefícios{
-        width: 80%;
-        margin:16% auto;
-    }
     .benefícios p{
         font-size: 12px;
-        padding: 4% 0;
+        padding: 0px 20px;
+        text-align: justify;
+        line-height: 30px;
+        margin-bottom: 20px;
     }
     .benefícios strong{
         color: var(--cor01);
     }
 
 /*LISTA - SEÇÃO "BENEFÍCIOS"*/
-    ul{
+    .lista-beneficios{
         background-color: var(--cor03);
+        border-radius: 10px;
+        width: 260px;
+        margin: 25px auto;
+        padding: 20px;
+        list-style-position: inside;
         list-style-image: url(/imagens/list-img.svg);
-        margin: 8% auto;
-        padding: 8%;
-        border-radius: 20px;
     }
-    li{
+    .lista-beneficios li{
         font-size: 12px;
         text-align: justify;
-        margin:9% 12%;
-        width: 80%;
+        margin-bottom: 15px;
     }
 
 /*BOTÃO DO FIM DA PÁGINA DIRECIONANDO PARA A PÁGINA "AGENDAR"*/
     .agendar-trg-btn{
         font-size: 12px;
-        color: var(--cor02);
         width: 145px;
         height: 32px;
-        margin:10% 20%;
         border: 1px solid var(--cor02);
         border-radius: 10px;
+        margin: 40px auto 70px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .agendar-trg-btn a{
+        color: var(--cor02);
+        text-decoration: none;
     }
 }
 
