@@ -39,23 +39,50 @@
 /*PARTE INCOMPLETA -- FALTA FOTO DO LADO DO TITULO*/
     main{
         background-color: #fff;
-        padding: 40px 30px 20px;
+        padding: 40px 30px 20px ;
     }
     h1{
         font-family: var(--font-destaque);
-        font-size: 2rem;
+        font-size: 1.7rem;
         color: var(--cor01);
         margin: 30px auto;
     }
-
-/* SEÇÃO DE  PACOTES DE SESSÕES*/
-    .card-preços{
+    article p{
+        margin: 50px 0;
+    }
+    .credenciais-trg{
+        position: absolute;
+        top: 73px;
+        right: 20px;
+        width: 100px;
+        height: 80px;
+    }
+    .credenciais-trg img{
+        width: 50px;
+        margin: 0 25px;
+        border-radius: 50%;
+    }
+    .credenciais-trg p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .carrossel{
+        list-style-type: none;
+        margin: 50px;
+    }
+    
+/* CARDS QUE IRÃO SER O CARROSSEL*/
+    .carrossel .item1
+/* ,  .carrossel .item2,
+    .carrossel .item3*/{
         width: 250px;
-        margin: 70px auto;
+        margin: 0;
+        padding: 0;
         border: 1px solid var(--cor01);
         border-radius: 30px;
     }
-    .card-preços h3{
+
+    .carrossel h3{
         font-family: var(--font-especial);
         font-size: 1.4rem;
         font-weight: 600;
@@ -63,19 +90,20 @@
         text-align: center;
         margin: 15px 0;
     }
-    .card-preços p{
+    
+
+    .carrossel p{
          font-size: 1.6rem;
          text-align: center;
          margin: 0 0 20px;
     }
-    .card-preços ul{
+    .carrossel  ul{
         list-style-image: url(/imagens/list-img.svg);
         list-style-position: inside;
         margin: auto 20px;
     }
-    .card-preços li{
-        margin: 15px 0;
-    }
+
+
     .assinar{
         width: 150px;
         height: 33px;
@@ -170,6 +198,22 @@
     main, .atendimento{
         padding: 40px 50px 50px;
     }
+    h1{
+        font-size: 2.2rem;
+    }
+    article p{
+        margin: 70px auto 10px;
+    }
+    .credenciais-trg{
+        width: 200px;
+        top: 100px;
+        right: 10px;
+    }
+    .credenciais-trg img{
+        width: 80px;
+        height: 80px;
+        margin: 0 60px;
+    }
     .atendimento p{
         margin: 20px 0;
     }
@@ -195,6 +239,22 @@
     main, .atendimento{
         padding: 40px 70px 50px;
     }
+    h1{
+        font-size: 2.2rem;
+    }
+    article p{
+        margin: 70px auto;
+    }
+    .credenciais-trg{
+        width: 200px;
+        top: 100px;
+        right: 40px;
+    }
+    .credenciais-trg img{
+        width: 80px;
+        height: 80px;
+        margin: 0 60px;
+    }
     .transtornos-emocionais{
         padding: 0;
         justify-content: center;
@@ -214,8 +274,205 @@
     }
 }
 @media (min-width:801px) {
+    h1{
+        margin: 60px 30px;
+    }
+    article p{
+        margin: 100px 30px 20px;
+    }
+    .credenciais-trg{
+        width: 200px;
+        height: auto;
+        top: 120px;
+        right: 60px;
+    }
+    .credenciais-trg img{
+        width: 100px;
+        height: 100px;
+        margin: 0 50px;
+    }
+    .pacotes-seções{
+        margin: 0;
+        padding: 50px;
+        height: 550px;
+        background-image: url(../imagens/pacotes-desktop.svg);
+        background-size: cover;
+    }
+    .carrossel{
+        margin: 0;
+        width: 230px;
+        height: 180px;
+    }
+    .carrossel li{
+        background-color: var(--cor04);
+    }
+    .bg-color-desktop li{
+
+        background-color: rgba(172, 129, 188, 0.25);
+        padding:5px 15px;
+    }
+    .bg-color-desktop li:nth-child(1){
+        border-radius:10px 10px 0 0;
+    } 
+    .bg-color-desktop li:nth-child(5){
+        border-radius: 0 0 10px 10px;
+    }
+    .assinar{
+        border: none;
+        background-color: var(--cor02);
+    }
+    .atendimento{
+        margin: 0;
+        padding:20px 60px;
+        display: grid;
+        grid-template-columns: 300px 500px;
+        grid-template-rows: 120px 200px 1200px;
+        grid-template-areas: "title imagem"
+                            "listinha imagem"
+                            "textgiga textgiga"
+    }
+    .transtornos-emocionais{
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        justify-content: left;
+    }
+    .atendimento h2{
+        font-size: 2.3rem;
+        text-align: left;
+        grid-area: title;
+        margin: 0 0 20px;
+    }
+    .textogiga{
+        width: 660px;
+        padding:0;
+        margin:0;
+        grid-area: textgiga;
+    }
+    #central-line{
+        text-align: left;
+        margin: 80px 0;
+        grid-area: title;
+    }
+    .lista-transtornos-emocionais {
+        grid-area: listinha;
+        margin: 20px 0 auto;
+    }
+    .lista-transtornos-emocionais li{
+        margin: 0 10px 10px 0;
+    }
+    .atendimento img{
+        width: 400px;
+        margin: 50px 100px 0 0;
+        grid-area: imagem;
+    }
+    
+
 }
 @media (min-width:1025px) {
+    h1{
+        font-size: 2.4rem;
+        margin: 60px 30px;
+    }
+    article p{
+        margin: 100px 30px 20px;
+    }
+    .credenciais-trg{
+        width: 300px;
+        right: 18px;
+    }
+    .credenciais-trg img{
+        width: auto;
+        height: 150px;
+        margin: 0 90px;
+    }
+    .atendimento{
+        padding: 0;
+        grid-template-columns: 500px 700px;
+        grid-template-rows: 120px 200px 1100px;
+    }
+    .transtornos-emocionais{
+        margin: 20px 60px;
+        width: 400px;
+    }
+    .atendimento h2{
+        font-size: 2.3rem;
+        margin: 20px 60px 20px;
+    }
+    .textogiga{
+        width: 900px;
+        margin: 60px;
+    }
+    #central-line{
+        margin: 100px 60px;
+    }
+    .lista-transtornos-emocionais {
+        margin: 20px 0 auto;
+    }
+    .atendimento img{
+        width: 450px;
+        margin: 60px 0;
+    }
 }
 @media (min-width:1251px) {
+    body{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 3.4rem;
+        margin: 60px 30px;
+    }
+    article p{
+        margin: 100px 30px 20px;
+    }
+    .credenciais-trg{
+        width: 300px;
+        right: 40px;
+        top: 130px;
+    }
+    .credenciais-trg img{
+        width: auto;
+        height: 150px;
+        margin: 0 90px;
+    }
+    .pacotes-seções{
+        height: 650px;
+    }
+    .atendimento{
+        padding: 0;
+        grid-template-columns: 600px 700px;
+        grid-template-rows: 120px 200px 1100px;
+    }
+    .transtornos-emocionais{
+        margin: 40px 140px;
+        width: 400px;
+    }
+    .atendimento h2{
+        font-size: 2.3rem;
+        margin: 20px 140px 20px;
+    }
+    .textogiga{
+        width: 1100px;
+        margin: 0 110px;
+    }
+    #central-line{
+        margin: 100px 140px;
+    }
+    .lista-transtornos-emocionais {
+        margin: 20px 0 auto;
+    }
+    .atendimento img{
+        width: 500px;
+        margin: 60px 0;
+    }
+    .contato{
+        width: 350px;
+        height: 400px;
+    }
+    .gmail-btn-contato, .insta-btn-contato, .whats-btn-contato{
+
+        width: 200px;
+        height: 45px;
+        margin: 30px 0 12px 70px;
+    }
 }

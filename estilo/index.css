@@ -189,8 +189,12 @@
     .textao-do-agendar p{
         margin: 15px 60px;   
     }
-    aside p, .zap-link p{
+    aside p{
         margin: 10px 60px;
+    }
+    .zap-link p{
+        width: 140px;
+        margin: auto 0 auto 60px;
     }
 
     .img-motivação{
@@ -217,8 +221,12 @@
         margin: 25px 195px;
     }
     
-    article p, aside p, .zap-link p, .textao-do-agendar p{
+    article p, aside p, .textao-do-agendar p{
         margin: 20px 70px;
+    }
+    .zap-link p{
+        width: 140px;
+        margin: auto 0 auto 70px;
     }
 
     .img-motivação{
@@ -227,7 +235,7 @@
     }
     .agendar-index{
         width: 120px;
-        margin: 30px 180px 50px;
+        margin: 30px 250px 50px;
     }
 }
 
@@ -235,12 +243,26 @@
     main{
         padding: 0;
         margin: 0;
+
+    }
+    h1{
+        margin: auto 100px;
     }
     article{
+        padding: 0 0 70px 0;
         border-radius: 0;
         border: none;
         background-image: url(../imagens/backimg-index-main.png);
         background-size: cover;
+    }
+    article p{
+        margin: 40px 250px 10px 50px;
+    }
+    .btn-saiba-mais{
+        margin: 30px 200px;
+    }
+    .depoimentos{
+        height: 600px;
     }
     .agendar{
         margin:70px 0px;
@@ -278,7 +300,6 @@
         font-size: 0.9rem;
     }
     aside p, .zap-link p{
-        
         margin: 0 15px;
     }
     .agendar-index{
@@ -288,7 +309,67 @@
 }
 
 @media (min-width:1025px) {
+    article{
+        padding: 40px 0 80px;
+    }
+    h1{
+        margin: auto 130px 50px;
+    }
+    article p{
+        margin: 20px 407px auto 100px;
+    }
+    .btn-saiba-mais{
+        margin: 40px 220px;
+    }
+    .agendar{
+        grid-template-columns: 435px 590px;
+        grid-template-rows: 180px 695px 70px;
+    }
+    .img-motivação{
+        width: 320px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .textao-do-agendar{
+        margin: 15px 15px 0 0;
+    }
+    .agendar-index{
+        margin: 25px 435px 0;
+        padding: 7px 14px;
+    }   
 }
 
 @media (min-width:1251px) {
+    body{
+        font-size: 1rem;
+    }
+    article{
+        padding: 0 0 80px;
+    }
+    h1{
+        margin: auto 130px 50px;
+        font-size: 2.6rem;
+    }
+    article p{
+        margin: 40px 600px auto 80px;
+    }
+    .btn-saiba-mais{
+        margin: 40px 280px;
+    }
+    .agendar{
+        grid-template-columns: 520px 720px;
+        grid-template-rows: 180px 600px 70px;
+    }
+    .img-motivação{
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .textao-do-agendar{
+        margin: 15px 30px 0 0;
+    }
+    .agendar-index{
+        margin: 25px 540px 0;
+        padding: 7px 14px;
+    }
 }
