@@ -31,43 +31,44 @@
 @media (min-width:320px){
     body{
         font-family: var(--font-padrao);
-        font-size: 12px;
+        font-size: 0.9rem;
     }
 
 /*TEXT0 SOBRE A CLIENTE*/
-    main{
-        width: 80%;
-        margin:10% auto;
-    }
     h1{
         font-family: var(--font-destaque);
-        font-size: 31px;
+        font-size: 2rem;
         text-align: center;
         color: var(--cor01);
-        margin: 5% auto 10%;
+        margin: 50px 48px 30px;
         border-bottom: 3px solid var(--cor02);
-        border-image: url(/imagens/h1-sobre-mim.png)  none;
     }
     article{
         text-align: justify;
+        margin:auto 40px 50px;
     }
 
 /*SEÇÃO DA "IMAGEM" E "COMO COMECEI"*/
     .como-comecei{
-     width: 100%;
-     margin: auto;
-     padding: 0 0 50% 0; 
-     background-image: url(../imagens/back-sobre-mim.svg);
+     padding: 0 0 160px 0; 
+     background-image: url(../imagens/bg-comecei-mobile.svg);
      background-repeat: no-repeat;
      background-size: contain;
      background-position: bottom;
     }
     
 /*IMAGEM*/
+    .img-auxiliar{
+        display: none;
+    }
     .cliente-img{
+        width: 320px;
+        display: flex;
+    }
+    #ft-client{
         width: 176px;
         height: 216px;
-        margin: 0 17% 0;
+        margin: 0 50px 0;
         padding: 17px 20px 0 20px;
         display: flex;
         box-sizing: content-box;
@@ -75,28 +76,185 @@
         border-radius: 20px 20px 0 0 ;
     }
 /*FIM DA IMAGEM*/
-
+    .bg-roxo{
+        background-color: var(--cor03);
+        margin: 0 0;
+    }
     h2{
         font-family: var(--font-destaque);
-        font-size: 31px;
+        font-size: 2rem;
         color: var(--cor01);
         text-align: center;
-        background-color: var(--cor03);
-        padding: 8% 0 8%;
+        padding: 30px 0;
     }
     .como-comecei p{
-        padding: 4% 12%;
+        padding: 20px 40px;
         text-align: justify;
-        background-color: var(--cor03);
     }
 }
 @media (min-width:480px) {
+    h1{
+        margin: 50px 48px 30px; 
+    }
+    .como-comecei{
+        padding: 0 0 239px 0;
+    }
+    #ft-client{
+        width: 200px;
+        height: 250px;
+        margin: 0 130px 0;
+    }
+    .como-comecei p{
+        padding: 20px 40px;
+        text-align: justify;
+    }
+    
 }
 @media (min-width:600px) {
+    h1{
+        margin: 50px 100px 30px; 
+    }
+    article{
+        margin: 40px 70px 50px;
+    }
+    #ft-client{
+        width: 220px;
+        height: 260px;
+        margin: 0 170px;
+    }
+    .como-comecei{
+        padding: 0 0 299px 0;
+    }
+    .como-comecei p{
+        padding: 20px 70px;
+    }
 }
 @media (min-width:801px) {
+    main{
+        padding: 0;
+        margin: 0;
+        background-image: url(../imagens/bg-sobremim-desktop.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    h1{
+        text-align: center;
+        margin: 0 150px;
+        padding: 20px;
+    }
+    article {
+        margin: 10px 90px;
+    }
+    .cliente-img{
+        width: 400px;
+        margin: 30px auto 0;
+        justify-content: center;
+        align-items: last baseline;
+    }
+    .img-auxiliar{
+        display: block;
+        height: 100px;
+        width: 90px;
+    }
+    .img-auxiliar:nth-child(1){
+        padding: 17px 17px 0 20px;
+        border-radius: 20px 0 0 0;
+    }
+    .img-auxiliar:nth-child(3){
+        padding: 17px 20px 0 17px;
+        border-radius: 0 20px 0 0;
+    }
+    #ft-client{
+        width: 136px;
+        height: 150px;
+        padding: 17px 20px 0 20px;
+    }
+    #ft-client, .img-auxiliar{
+        margin: 0;
+        display: flex;
+        box-sizing: content-box;
+        background-color: var(--cor03);
+        border-radius: 20px 20px 0 0 ;
+    }
+    /*FIM DA IMAGEM*/
+    h2{
+        font-size: 2rem;
+        padding: 30px 0;
+    }
+    .como-comecei p{
+        padding: 20px 80px;
+    }
+    .como-comecei{
+        padding: 0 0 160px 0; 
+        background-image: url(../imagens/bg-comecei-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+       }
 }
 @media (min-width:1025px) {
-}
+    main{
+    background-size: cover;
+    }
+    h1{
+        margin: 0 350px 40px;
+        padding: 40px 0 20px;
+    }
+    article {
+        margin: 10px 130px;
+    }
+    .cliente-img{
+        width: 600px;
+        margin: 100px auto 0;
+    }
+    .img-auxiliar{
+        height: 200px;
+        width: 120px;
+    }
+    #ft-client{
+        width: 200px;
+        height: 280px;
+    }
+    h2{
+        padding: 30px 0;
+    }
+    .como-comecei p{
+        padding: 20px 80px;
+    }
+    }
 @media (min-width:1251px) {
+    body{
+        font-size: 1rem;
+    }
+    main{
+        background-size: cover;
+    }
+    h1{
+        margin: 0 350px;
+        padding: 60px 0  20px;
+    }
+    article {
+        margin: 60px 150px;
+    }
+    .cliente-img{
+        width: 700px;
+        margin: 90px auto 0;
+    }
+    .img-auxiliar{
+        height: auto;
+        width: 130px;
+    }
+    #ft-client{
+        width: 236px;
+        height: auto;
+    }
+    h2{
+        padding: 80px 0 30px ;
+    }
+    .como-comecei p{
+        padding: 20px 130px;
+    }
+    .como-comecei{
+        padding: 0 1px 180px;
+    }
 }
