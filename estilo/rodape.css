@@ -79,7 +79,8 @@
 }
 
 @media screen and (max-width: 600px){
-    .logo-footer{
+
+    .rodape > a{
         display: none;
     }
 

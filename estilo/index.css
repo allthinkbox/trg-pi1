@@ -30,7 +30,6 @@
 
 @media (min-width:320px) {
     body{
-        font-family: var(--font-padrao);
         font-size: 0.9rem;
         text-align: justify;
         background-color: var(--cor04);
@@ -43,46 +42,66 @@
     }
 
     /*AQUI COMEÇA A HOME DO SITE*/
-    main{
-        padding-bottom: 60px;
+    .sessao-principal{
+        overflow: hidden;
     }
+
     h1{
         font-family: var(--font-destaque);
         color: var(--cor01);
-        font-size: 2rem;
-        margin: 0 30px;
-    }
-    article {
-        background-color: #fff;
-        background-image: url(../imagens/back-main.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 0 0 40% 35%;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
-    }
-    article p{
-        margin: 15px 30px;
+        font-size: 1.9em;
+        margin-bottom: 15px;
     }
 
+    p{
+        color: black;
+        font-family: var(--font-padrao);
+        font-size: 1em;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .quadrado{
+        background-color: white;
+        width: 100%;
+        height: 313px;
+        padding: 30px;
+    }
+
+    .elipse{
+        background-color: white;
+        width: 147%;
+        height: 367px;
+        border-radius: 50%;
+        position: relative;
+        z-index: -1;
+        top: -110px;
+        transform: rotate(329deg);
+        left: -76px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
     /*AQUI FICA O BOTÃO "SAIBA MAIS"*/
     .btn-saiba-mais{
+        margin-top: 22px;
         width: 116px;
         height: 32px;
-        margin: 20px 102px;
         padding: 10px;
-        z-index: 1;
-        border: 1px solid var(--cor01);
         border-radius: 20px;
         background-color: var(--cor01);
+        border: 1ps solid var(--cor01);
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 2s;
     }
+
     .btn-saiba-mais a{
-        color: var(--cor04);
+        color: white;
         text-decoration: none;
     }
+
     /*DEPOIMENTOS DOS PACIENTES DA NOSSA CLIENTE*/
     .depoimentos{
         height: 450px;

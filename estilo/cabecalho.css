@@ -40,16 +40,6 @@
     transition: 0.3s;
 }
 
-.logo a{
-    display: block;
-
-}
-
-.logo a img{
-    display: block;
-    width: 60%;
-}
-
 .navigation{
     display: flex;
     justify-content: sc-between;
