@@ -30,7 +30,6 @@
 
 @media (min-width:320px) {
     body{
-        font-size: 0.9rem;
         text-align: justify;
         background-color: var(--cor04);
     }
@@ -40,17 +39,20 @@
         width: 100%;
         display: flex;
     }
-
-    /*AQUI COMEÇA A HOME DO SITE*/
-    .sessao-principal{
-        overflow: hidden;
-    }
+    /*FIM BANNER "TERAPIA DE REPROCESSAMENTO GENERATIVO"*/
 
     h1{
         font-family: var(--font-destaque);
         color: var(--cor01);
         font-size: 1.9em;
         margin-bottom: 15px;
+    }
+
+    h2{
+        font-family: var(--font-destaque);
+        font-size: 1.6;
+        text-align: center;
+        color: white;
     }
 
     p{
@@ -61,10 +63,16 @@
         margin-bottom: 10px;
     }
 
+    /*HOME*/
+
+    .sessao-principal{
+        overflow: hidden;
+    }
+
     .quadrado{
         background-color: white;
         width: 100%;
-        height: 313px;
+        height: 393px;
         padding: 30px;
     }
 
@@ -81,7 +89,6 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
     
-    /*AQUI FICA O BOTÃO "SAIBA MAIS"*/
     .btn-saiba-mais{
         margin-top: 22px;
         width: 116px;
@@ -101,20 +108,108 @@
         color: white;
         text-decoration: none;
     }
+    /*FIM  HOME*/
 
-    /*DEPOIMENTOS DOS PACIENTES DA NOSSA CLIENTE*/
+    /*DEPOIMENTOS*/
     .depoimentos{
-        height: 450px;
+        margin: 0 auto 70px auto;
+        width: 100%;
+        height: 680px;
+        overflow: hidden;
         background-color: var(--cor01);
+        padding: 30px 0;
     }
-    h2{
-        font-family: var(--font-destaque);
-        font-size: 2rem;
-        text-align: center;
-        text-decoration: underline;
-        color: var(--cor04);
-        padding: 45px 0;
+
+    .underline{
+        display: block;
+        margin: 0 auto 30px auto;
+        width: 45%;
     }
+
+    .slides{
+        width: 400%;
+        height: 286px;
+        display: flex;
+    }
+
+    .slides input{
+        display: none;
+    }
+
+    .slide{
+        width: 25%;
+        position: relative;
+        transition: 2s;
+    }
+
+    .slide iframe{
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .manual-navigation{
+        position: absolute;
+        width: 100%;
+        margin-top: 228px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn{
+        border: 2px solid #ffffff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:not(:last-child){
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover{
+        background-color: #FFF;
+    }
+
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first{
+        margin-left: -25%;
+    }
+
+    .navigation-auto div{
+        border: 2px solid #20a6ff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .navigation-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 514px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+    }
+
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color: #FFF;
+    }
+
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color: #FFF;
+    }
+    /*FIM DEPOIMENTOS*/
+
+
     /*SEÇÃO "AGENDAR" DA HOME DO SITE*/
     .img-motivação{
         width: 270px;
@@ -202,9 +297,6 @@
         margin: 25px 145px;
     }
 
-    .depoimentos{
-        height: 560px;
-    }
     .textao-do-agendar p{
         margin: 15px 60px;   
     }
@@ -279,9 +371,6 @@
     }
     .btn-saiba-mais{
         margin: 30px 200px;
-    }
-    .depoimentos{
-        height: 600px;
     }
     .agendar{
         margin:70px 0px;

@@ -41,7 +41,7 @@
         <img class="banner-img" src="imagens/Neide Sena (4) 1.svg" alt="">
     <!-- FIM BANNER "TERAPIA DE REPROCESSAMENTO GENERATIVO"-->
     
-    <!--AQUI COMEÇA A HOME DO SITE -->
+    <!-- HOME -->
     <main class="sessao-principal">
         <div class="quadrado">
             <h1>Terapia Online</h1>
@@ -51,14 +51,43 @@
         </div>
         <div class="elipse"></div>
     </main>
+    <!-- FIM HOME -->
 
-    <!--AQUI COMEÇAM OS DEPOIMENTOS DOS PACIENTES DA NOSSA CLIENTE-->
+    <!--DEPOIMENTOS-->
     <section class="depoimentos">
-        <h2>
-            Depoimentos
-        </h2>
-        <video src="#"></video>
+
+        <h2>Depoimentos</h2>
+        <img class="underline" src="imagens/underline-depoimentos.svg" alt="">
+        <div class="slides">
+            <!--Radios buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <!--Fim Radios buttons-->
+
+            <!--Slide videos-->
+            <div class="slide first">
+                <iframe width="250" height="450" src="https://www.youtube.com/embed/OG4pStKnkjY" title="Depoimento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="slide">
+                <iframe width="250" height="450" src="https://www.youtube.com/embed/og153dF6PB4" title="depoimento1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <!--Fim Slide videos-->
+
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+            </div>
+            <!--Fim Navigation auto-->
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+        </div>
+
     </section>
+    <!--FIM DEPOIMENTOS-->
 
     <!--SEÇÃO "AGENDAR" DA HOME DO SITE -->
     <section class="agendar">
@@ -117,6 +146,6 @@
         <a href="index.html"><img src="imagens/logo-trg-sem-nome.svg" alt="Logo TRG"></a>
     </footer>
     <!--FIM RODAPÉ-->
-
+    <script src="dinamica/depoimentos.js"></script>
 </body>
 </html>
