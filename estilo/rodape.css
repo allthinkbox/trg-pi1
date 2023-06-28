@@ -99,6 +99,10 @@
         border: none;
         width: 15%;
     }
+
+    .logo-footer{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 320px){

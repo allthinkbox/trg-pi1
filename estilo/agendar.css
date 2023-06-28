@@ -52,15 +52,14 @@
     }
     .credenciais-trg{
         position: absolute;
-        top: 73px;
+        top: 116px;
         right: 20px;
         width: 100px;
         height: 80px;
     }
     .credenciais-trg img{
-        width: 50px;
+        width: 50%;
         margin: 0 25px;
-        border-radius: 50%;
     }
     .credenciais-trg p{
         font-size: 12px;
@@ -180,19 +179,40 @@
         margin: 12px 0 12px 39px;
         background-color: #fff;
         border-radius: 10px;
+        cursor: pointer;
     }
     .gmail-btn-contato{
         border: 1px solid #C71610;
         color: #C71610;
+        transition: 1s;
     }
+
+    .gmail-btn-contato:hover{
+        background-color: #C71610;
+        color: white;
+    }
+
     .insta-btn-contato{
         border: 1px solid #E1306C;
         color: #E1306C;
+        transition: 1s;
+    }
+
+    .insta-btn-contato:hover{
+        background-color: #E1306C;
+        color: white;
     }
     .whats-btn-contato{
         border: 1px solid #25D366;
         color: #25D366;
+        transition: 1s;
     }
+
+    .whats-btn-contato:hover{
+        background-color: #25D366;
+        color: white;
+    }
+
 }
 @media (min-width:480px) {
     main, .atendimento{

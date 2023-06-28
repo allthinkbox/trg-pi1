@@ -29,6 +29,11 @@
 }
 
 @media (min-width:320px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
     body{
         font-family: var(--font-padrao);
         font-size: 0.9rem;
