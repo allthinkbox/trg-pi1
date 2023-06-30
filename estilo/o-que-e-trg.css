@@ -299,6 +299,13 @@
     }
     .agendar-trg-btn{
         margin: 20px auto 90px;
+        transition: 1.5s;
+    }
+    .agendar-trg-btn:hover {
+        background-color: var(--cor01);
+    }
+    .agendar-trg-btn a:hover{
+        color: var(--cor04);
     }
 }
 

@@ -52,7 +52,9 @@
         text-align: justify;
         margin:auto 40px 50px;
     }
-
+    article p{
+        margin: 0 0 20px;
+    }
 /*SEÇÃO DA "IMAGEM" E "COMO COMECEI"*/
     .como-comecei{
      padding: 0 0 160px 0; 
@@ -81,10 +83,7 @@
         border-radius: 20px 20px 0 0 ;
     }
 /*FIM DA IMAGEM*/
-    .bg-roxo{
-        background-color: var(--cor03);
-        margin: 0 0;
-    }
+
     h2{
         font-family: var(--font-destaque);
         font-size: 2rem;
@@ -190,10 +189,10 @@
         padding: 20px 80px;
     }
     .como-comecei{
-        padding: 0 0 160px 0; 
+        padding: 0 0 200px 0; 
         background-image: url(../imagens/bg-comecei-desktop.svg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: bottom;
        }
 }
@@ -223,10 +222,13 @@
     h2{
         padding: 30px 0;
     }
+    .como-comecei{
+        padding: 0 0 250px;
+    }
     .como-comecei p{
         padding: 20px 80px;
     }
-    }
+}
 @media (min-width:1251px) {
     body{
         font-size: 1rem;
@@ -260,6 +262,14 @@
         padding: 20px 130px;
     }
     .como-comecei{
-        padding: 0 1px 180px;
+        padding: 0 1px 250px;
+    }
+}
+@media(min-width: 1500px){
+    article{
+        margin: 50px 250px;
+    }
+    .como-comecei{
+        padding: 0 0 270px;
     }
 }

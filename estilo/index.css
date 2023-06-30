@@ -621,3 +621,8 @@
     }
 
 }
+@media (min-width: 1600px){
+    .sessao-principal-desktop{
+        height: 850px;
+    }
+}
