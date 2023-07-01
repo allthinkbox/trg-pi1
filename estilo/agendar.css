@@ -94,7 +94,7 @@
          text-align: center;
          margin: 0 0 20px;
     }
-    .bg-color-desktop ul, .bg-color-desktop ul, .bg-color-desktop ul{
+    .item1 .bg-color-desktop ul, .item2 .bg-color-desktop ul, .item3 .bg-color-desktop ul{
         list-style-image: url(../imagens/list-img.svg);
         list-style-position: inside;
         margin: auto 20px;
