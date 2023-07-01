@@ -57,25 +57,26 @@
     }
 /*SEÇÃO DA "IMAGEM" E "COMO COMECEI"*/
     .como-comecei{
-     padding: 0 0 160px 0; 
+     padding: 0 0 400px 0; 
      background-image: url(../imagens/bg-comecei-mobile.svg);
      background-repeat: no-repeat;
-     background-size: contain;
-     background-position: bottom;
+     background-size: cover;
     }
     
 /*IMAGEM*/
+    .cliente-img{
+        margin:auto auto 0;
+        width: 320px;
+        display: flex;
+        justify-content: center;
+    }
     .img-auxiliar{
         display: none;
     }
-    .cliente-img{
-        width: 320px;
-        display: flex;
-    }
+
     #ft-client{
         width: 176px;
         height: 216px;
-        margin: 0 50px 0;
         padding: 17px 20px 0 20px;
         display: flex;
         box-sizing: content-box;
@@ -101,7 +102,7 @@
         margin: 50px 48px 30px; 
     }
     .como-comecei{
-        padding: 0 0 239px 0;
+        padding: 0 0 300px 0;
     }
     #ft-client{
         width: 200px;
@@ -189,7 +190,7 @@
         padding: 20px 80px;
     }
     .como-comecei{
-        padding: 0 0 200px 0; 
+        padding: 0 0 250px 0; 
         background-image: url(../imagens/bg-comecei-desktop.svg);
         background-repeat: no-repeat;
         background-size: cover;

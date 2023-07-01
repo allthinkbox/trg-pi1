@@ -53,8 +53,8 @@
     .credenciais-trg{
         position: absolute;
         top: 116px;
-        right: 20px;
-        width: 100px;
+        right: 40px;
+        width: 130px;
         height: 80px;
     }
     .credenciais-trg img{
@@ -66,22 +66,21 @@
         text-align: center;
     }
     .carrossel{
-        list-style-type: none;
-        margin: 50px;
+        display: flex;
+        overflow: hidden;
+        margin: 20px;
     }
-    
+
 /* CARDS QUE IRÃO SER O CARROSSEL*/
-    .carrossel .item1
-/* ,  .carrossel .item2,
-    .carrossel .item3*/{
+    .item1, .item2, .item3{
         width: 250px;
-        margin: 0;
+        margin:0 40px 0 0;
         padding: 0;
         border: 1px solid var(--cor01);
         border-radius: 30px;
     }
 
-    .carrossel h3{
+    .item1 h3, .item2 h3, .item3 h3{
         font-family: var(--font-especial);
         font-size: 1.4rem;
         font-weight: 600;
@@ -90,18 +89,16 @@
         margin: 15px 0;
     }
     
-
-    .carrossel p{
+    .item1 p, .item2 p, .item3 p{
          font-size: 1.6rem;
          text-align: center;
          margin: 0 0 20px;
     }
-    .carrossel  ul{
+    .item1 ul, .item2 ul, .item3 ul{
         list-style-image: url(/imagens/list-img.svg);
         list-style-position: inside;
         margin: auto 20px;
     }
-
 
     .assinar{
         width: 150px;
@@ -226,7 +223,7 @@
     }
     .credenciais-trg{
         width: 200px;
-        top: 100px;
+        top: 116px;
         right: 10px;
     }
     .credenciais-trg img{
@@ -267,7 +264,7 @@
     }
     .credenciais-trg{
         width: 200px;
-        top: 100px;
+        top: 116px;
         right: 40px;
     }
     .credenciais-trg img{
@@ -319,16 +316,27 @@
         background-size: cover;
     }
     .carrossel{
+        display: flex;
+        justify-content: space-evenly;
+        overflow: visible;
         margin: 0;
-        width: 230px;
-        height: 180px;
     }
-    .carrossel li{
-        background-color: var(--cor04);
+    .item1, .item2, .item3{
+        background-color: white;
+        margin: 0;
+        width: 210px;
     }
-    .bg-color-desktop li{
 
+    .item1 .bg-color-desktop li{
         background-color: rgba(172, 129, 188, 0.25);
+        padding:5px 15px;
+    }
+    .item2 .bg-color-desktop li{
+        background-color: rgba(127, 62, 152, .25);
+        padding:5px 15px;
+    }
+    .item3 .bg-color-desktop li{
+        background-color:rgba(204, 111, 173, .25);
         padding:5px 15px;
     }
     .bg-color-desktop li:nth-child(1){
@@ -337,40 +345,48 @@
     .bg-color-desktop li:nth-child(5){
         border-radius: 0 0 10px 10px;
     }
+
     .assinar{
+        margin: 30px auto;
         border: none;
+    }
+    .item1 .assinar{
         background-color: var(--cor02);
     }
+    .item2 .assinar{
+        background-color: var(--cor01);
+    }
+    .item3 .assinar{
+        background-color: var(--cor05);
+    }
+
+
     .atendimento{
         margin: 0;
         padding:20px 60px;
         display: grid;
-        grid-template-columns: 300px 500px;
+        grid-template-columns: 1.3fr 1.7fr;
         grid-template-rows: 120px 200px 1200px;
         grid-template-areas: "title imagem"
                             "listinha imagem"
                             "textgiga textgiga"
     }
     .transtornos-emocionais{
-        margin: 0;
-        padding: 0;
-        width: 300px;
-        justify-content: left;
+        margin: 20px 0;
+        justify-content: center;
     }
     .atendimento h2{
         font-size: 2.3rem;
-        text-align: left;
+        text-align: center;
         grid-area: title;
-        margin: 0 0 20px;
     }
     .textogiga{
-        width: 660px;
         padding:0;
-        margin:0;
+        margin:40px auto 0;
         grid-area: textgiga;
     }
     #central-line{
-        text-align: left;
+        text-align: center;
         margin: 80px 0;
         grid-area: title;
     }
@@ -406,14 +422,17 @@
         height: 150px;
         margin: 0 90px;
     }
+    .carrossel{
+        justify-content: space-around;
+    }
+    .item1, .item2, .item3{
+        width: 260px;
+    }
+
     .atendimento{
         padding: 0;
-        grid-template-columns: 500px 700px;
+        grid-template-columns: 1.4fr 1.6fr;
         grid-template-rows: 120px 200px 1100px;
-    }
-    .transtornos-emocionais{
-        margin: 20px 60px;
-        width: 400px;
     }
     .atendimento h2{
         font-size: 2.3rem;
@@ -421,11 +440,8 @@
     }
     .textogiga{
         width: 900px;
-        margin: 60px;
     }
-    #central-line{
-        margin: 100px 60px;
-    }
+
     .lista-transtornos-emocionais {
         margin: 20px 0 auto;
     }
@@ -458,25 +474,20 @@
     .pacotes-seções{
         height: 650px;
     }
+    .item1, .item2, .item3{
+        width: 300px;
+    }
     .atendimento{
-        padding: 0;
-        grid-template-columns: 600px 700px;
+        grid-template-columns: 1.45fr 1.55fr;
         grid-template-rows: 120px 200px 1100px;
     }
-    .transtornos-emocionais{
-        margin: 40px 140px;
-        width: 400px;
-    }
+
     .atendimento h2{
         font-size: 2.3rem;
         margin: 20px 140px 20px;
     }
     .textogiga{
         width: 1100px;
-        margin: 0 110px;
-    }
-    #central-line{
-        margin: 100px 140px;
     }
     .lista-transtornos-emocionais {
         margin: 20px 0 auto;
@@ -495,4 +506,16 @@
         height: 45px;
         margin: 30px 0 12px 70px;
     }
+}
+@media(min-width: 1500px){
+    .textogiga{
+        width: 1320px;
+    }
+    .item1, .item2, .item3{
+        width: 350px;
+    }
+    .item1 .bg-color-desktop li, .item2 .bg-color-desktop li, .item3 .bg-color-desktop li{
+        padding: 20px 10px;
+    }
+
 }
