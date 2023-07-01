@@ -95,7 +95,7 @@
          margin: 0 0 20px;
     }
     .item1 ul, .item2 ul, .item3 ul{
-        list-style-image: url(/imagens/list-img.svg);
+        list-style-image: url(../imagens/list-img.svg);
         list-style-position: inside;
         margin: auto 20px;
     }
