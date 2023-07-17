@@ -69,6 +69,7 @@
 .texto strong{
     font-family: var(--font-thinkbox);
     font-size: 0.75em;
+    color: #D9AD29;
 }
 
 .icones img:hover{

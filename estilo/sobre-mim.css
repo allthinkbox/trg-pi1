@@ -138,9 +138,6 @@
     main{
         padding: 0;
         margin: 0;
-        background-image: url(../imagens/bg-sobremim-desktop.svg);
-        background-size: 100%;
-        background-repeat: no-repeat;
     }
     h1{
         text-align: center;
@@ -190,6 +187,7 @@
         padding: 20px 80px;
     }
     .como-comecei{
+        margin: 0;
         padding: 0 0 250px 0; 
         background-image: url(../imagens/bg-comecei-desktop.svg);
         background-repeat: no-repeat;
