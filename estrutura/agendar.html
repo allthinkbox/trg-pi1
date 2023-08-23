@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../estilo/agendar.css">
     <link rel="stylesheet" href="../estilo/cabecalho.css">
     <link rel="stylesheet" href="../estilo/rodape.css">
+    <link rel="stylesheet" href="../estilo/slider-agnd.css">
 </head>
 <body>
     <header class="header">
@@ -51,7 +52,51 @@
     </main>
 <!-- SEÇÃO DE  PACOTES DE SESSÕES -->
     <section class="agendar">
-        
+        <div class="slider">
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <div id="card-padrao">
+                        <h1>Padrão</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum rem, deleniti nam commodi ratione consectetur voluptatem dolorum quam voluptates perspiciatis architecto, dolores exercitationem qui sunt eos deserunt, quae impedit assumenda?</p>
+                        <div id="btn-card-padrao">Agendar</div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div id="card-especial">
+                        <h1>Especial</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum rem, deleniti nam commodi ratione consectetur voluptatem dolorum quam voluptates perspiciatis architecto, dolores exercitationem qui sunt eos deserunt, quae impedit assumenda?</p>
+                        <div id="btn-card-especial">Agendar</div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div id="card-avulso">
+                        <h1>Avulso</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum rem, deleniti nam commodi ratione consectetur voluptatem dolorum quam voluptates perspiciatis architecto, dolores exercitationem qui sunt eos deserunt, quae impedit assumenda?</p>
+                        <div id="btn-card-avulso">Agendar</div>
+                    </div>
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
     </section>
 
 <!-- SEÇÃO ATENDIMETOS -->
