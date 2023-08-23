@@ -30,10 +30,18 @@
 
 @media (min-width:320px) {
 
+    .agendar{
+        display: block;
+    }
+
+    .agendar-desktop{
+        display: none;
+    }
+
     .slider{
         margin: 0 auto 70px auto;
         width: 100%;
-        height: 600px;
+        height: 780px;
         overflow: hidden;
         background-color: #f1f1f1;
         padding: 30px 0;
@@ -63,7 +71,7 @@
     .manual-navigation{
         position: absolute;
         width: 100%;
-        margin-top: 175px;
+        margin-top: 436px;
         display: flex;
         justify-content: center;
     }
@@ -97,7 +105,7 @@
     }
 
     .navigation-auto div{
-        border: 2px solid #20a6ff;
+        border: 2px solid var(--cor04);
         padding: 5px;
         border-radius: 10px;
         cursor: pointer;
@@ -107,7 +115,7 @@
     .navigation-auto{
         position: absolute;
         width: 100%;
-        margin-top: 461px;
+        margin-top: 722px;
         display: flex;
         justify-content: center;
     }
@@ -128,22 +136,33 @@
         background-color: purple;
     }
 
+    #card-padrao h1{
+        font-family: var(--font-especial);
+        text-align: center;
+        margin: 15px auto 5px auto;
+    }
+
+    .slides h2{
+        padding: 0;
+        font-family: var(--font-especial);
+    }
+
+    .slides a{
+        text-decoration: none;
+    }
+
+    .slides p{
+         font-family: var(--font-padrao);
+         text-align: justify;
+         margin: 15px auto 5px auto;
+    }
+
     #card-padrao{
         border: 1px solid purple;
         border-radius: 20px;
         margin: 50px auto 0px auto;
         width: 80%;
         padding: 10px;
-    }
-
-    #card-padrao h1{
-        font-family: var(--font-especial);
-        text-align: center;
-    }
-
-    .slides p{
-         font-family: var(--font-padrao);
-         text-align: justify;
     }
 
     #btn-card-padrao{
@@ -203,4 +222,208 @@
         padding: 5px;
         color: white;
     }
+
+    del{
+        color: #7a7a7a;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    sup{
+        color: red;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    .preco{
+        color: #303030;
+        font-weight: normal;
+    }
+}
+
+@media (min-width: 480px) {
+    #card-padrao{
+        width: 70%;
+        padding: 20px;
+    }
+
+    #btn-card-padrao{
+        width: 70%;
+    }
+
+    #card-especial{
+        width: 70%;
+        padding: 20px;
+    }
+
+    #btn-card-especial{
+        width: 70%;
+    }
+
+    #card-avulso{
+        width: 70%;
+        padding: 20px;
+    }
+
+    #btn-card-avulso{
+        width: 70%;
+    }
+}
+
+@media (min-width: 600px) {
+    #card-padrao{
+        width: 60%;
+        padding: 30px;
+    }
+
+    #btn-card-padrao{
+        width: 60%;
+    }
+
+    #card-especial{
+        width: 60%;
+        padding: 30px;
+    }
+
+    #btn-card-especial{
+        width: 60%;
+    }
+
+    #card-avulso{
+        width: 60%;
+        padding: 30px;
+    }
+
+    #btn-card-avulso{
+        width: 60%;
+    }
+
+    .slides p{
+        margin: 25px auto 10px auto;
+
+        line-height: 25px;
+        font-size: 17px;
+   }
+
+   .slider{
+        height: 900px;
+   }
+
+   .manual-navigation{
+        margin-top: 585px;
+   }
+
+   .navigation-auto{
+        margin-top: 871px;
+   }
+}
+
+@media (min-width: 1025px) {
+    .agendar{
+        display: none;
+    }
+
+    .agendar-desktop{
+        display: block;
+        background-image: url(../imagens/img-back-agendar.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 80px 30px 80px 30px;
+    }
+
+    .agendar-desktop h1{
+        margin: 10px auto;
+        text-align: center;
+        font-weight: normal;
+        font-size: 2.7em;
+    }
+
+    .agendar-desktop h2{
+        padding: 0;
+        color: #303030;
+        font-weight: normal;
+        font-family: var(--font-especial);
+        font-size: 2.2em;
+    }
+
+    .agendar-desktop p{
+        margin: 10px auto 15px auto;
+    }
+
+    .agendar-desktop a{
+        text-decoration: none;
+    }
+
+    .box-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #card-padrao-desktop{
+        background-color: white;
+        width: 32%;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: #303030af;
+    }
+
+    #btn-card-padrao-desktop{
+        background-color: var(--cor01);
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        width: 180px;
+        margin: 30px auto;
+    }
+
+    #card-especial-desktop{
+        background-color: white;
+        width: 32%;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: #303030af;
+    }
+
+    #card-especial-desktop h1{
+        color: var(--cor05);
+    }
+
+    #btn-card-especial-desktop{
+        background-color: var(--cor05);
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        width: 180px;
+        margin: 30px auto;
+    }
+
+    #card-avulso-desktop{
+        background-color: white;
+        width: 32%;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: #303030af;
+    }
+
+    #card-avulso-desktop h1{
+        color: var(--cor02);
+    }
+
+    #btn-card-avulso-desktop{
+        background-color: var(--cor02);
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        width: 180px;
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 1251px) {
+    
 }
