@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../estilo/agendar.css">
     <link rel="stylesheet" href="../estilo/cabecalho.css">
     <link rel="stylesheet" href="../estilo/rodape.css">
+    <link rel="stylesheet" href="../estilo/slider-agnd.css">
 </head>
 <body>
     <header class="header">
@@ -51,15 +52,92 @@
     </main>
 <!-- SEÇÃO DE  PACOTES DE SESSÕES -->
     <section class="agendar">
-        <div>
-            <h1>Sessão única</h1>
-            <h2>R$ 150,00</h2>
-            <p>Ei, é o mês do seu aniversário? <strong>APROVEITE:</strong> no mês do seu aniversário, a primeira sessão sai de graça.</p>
-            <p>Cada sessão é <strong>R$150,00</strong>, porém se fechar um pacote com <strong>5 sessões</strong>, você <strong>ganha 20% de desconto</strong>.</p>
-            <p>Aproveite! Começe a investir no seu <strong>bem-estar emocional</strong>.</p>
-            <a href="assinar.html">
-                <div>Agendar</div>
-            </a>
+        <div class="slider">
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <div id="card-padrao">
+                        <h1>Padrão</h1>
+                        <h2><del>R$750.00</del><sup>-20%</sup></h2>
+                        <h2 class="preco">R$600.00</h2>
+                        <p>Descubra o caminho para o equilíbrio emocional com a nossa promoção imperdível! Agora, você pode garantir um pacote exclusivo de 5 sessões de terapia com um incrível desconto de 20%. Imagine a transformação que você pode alcançar ao investir em seu bem-estar mental e emocional. Não deixe passar essa oportunidade de cuidar de si mesmo, economizando ao mesmo tempo. Reserve agora e comece sua jornada para uma mente saudável com desconto e qualidade incomparáveis!</p>
+                        <a href="../estrutura/assinar.html" target="_blank" rel="external">
+                            <div id="btn-card-padrao">Agendar</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div id="card-especial">
+                        <h1>Especial</h1>
+                        <h2><del>R$750.00</del><sup>-30%</sup></h2>
+                        <h2 class="preco">R$525.00</h2>
+                        <p>Celebre o seu mês especial de aniversário com um presente que realmente importa: cuidado e bem-estar emocional. Nossa promoção exclusiva oferece um desconto imperdível de 30% em um pacote de 5 sessões de terapia personalizada. Imagine aproveitar um tempo dedicado a si mesmo, explorando suas metas e superando desafios. Essa é a sua oportunidade de investir em um futuro mais saudável e feliz. Reserve agora para garantir sua oferta única no mês do seu aniversário e comece um novo ano de vida com mente e coração renovados.</p>
+                        <a href="../estrutura/assinar.html" target="_blank" rel="external">
+                            <div id="btn-card-especial">Agendar</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div id="card-avulso">
+                        <h1>Avulso</h1>
+                        <h2 class="preco">R$150.00</h2>
+                        <p>Descubra o poder da transformação pessoal com a nossa oferta excepcional de sessões de terapia avulsas. Por apenas R$150.00, você terá acesso a uma experiência terapêutica que pode desbloquear o seu potencial máximo e promover um bem-estar duradouro. Prepare-se para uma jornada de autodescoberta e crescimento emocional. Não perca a oportunidade de investir em si mesmo e aproveitar os benefícios de uma sessão de terapia de alta qualidade. Reserve agora e dê o primeiro passo em direção a uma vida mais saudável e plena.</p>
+                        <a href="../estrutura/assinar.html" target="_blank" rel="external">
+                            <div id="btn-card-avulso">Agendar</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="agendar-desktop">
+        <div class="box-cards">
+            <div id="card-padrao-desktop">
+                <h1>Padrão</h1>
+                <h2><del>R$750.00</del><sup>-20%</sup></h2>
+                <h2 class="preco-desktop">R$600.00</h2>
+                <p>Descubra o caminho para o equilíbrio emocional com a nossa promoção imperdível! Agora, você pode garantir um pacote exclusivo de 5 sessões de terapia com um incrível desconto de 20%. Imagine a transformação que você pode alcançar ao investir em seu bem-estar mental e emocional. Não deixe passar essa oportunidade de cuidar de si mesmo, economizando ao mesmo tempo. Reserve agora e comece sua jornada para uma mente saudável com desconto e qualidade incomparáveis!</p>
+                <a href="../estrutura/assinar.html" target="_blank" rel="external">
+                    <div id="btn-card-padrao-desktop">Agendar</div>
+                </a>
+            </div>
+            <div id="card-especial-desktop">
+                <h1>Especial</h1>
+                <h2><del>R$750.00</del><sup>-30%</sup></h2>
+                <h2 class="preco-desktop">R$525.00</h2>
+                <p>Celebre o seu mês especial de aniversário com um presente que realmente importa: cuidado e bem-estar emocional. Nossa promoção exclusiva oferece um desconto imperdível de 30% em um pacote de 5 sessões de terapia personalizada. Imagine aproveitar um tempo dedicado a si mesmo, explorando suas metas e superando desafios. Essa é a sua oportunidade de investir em um futuro mais saudável e feliz. Reserve agora para garantir sua oferta única no mês do seu aniversário e comece um novo ano de vida com mente e coração renovados.</p>
+                <a href="../estrutura/assinar.html" target="_blank" rel="external">
+                    <div id="btn-card-especial-desktop">Agendar</div>
+                </a>
+            </div>
+            <div id="card-avulso-desktop">
+                <h1>Avulso</h1>
+                <h2 class="preco-desktop">R$150.00</h2>
+                <p>Descubra o poder da transformação pessoal com a nossa oferta excepcional de sessões de terapia avulsas. Por apenas R$150.00, você terá acesso a uma experiência terapêutica que pode desbloquear o seu potencial máximo e promover um bem-estar duradouro. Prepare-se para uma jornada de autodescoberta e crescimento emocional. Não perca a oportunidade de investir em si mesmo e aproveitar os benefícios de uma sessão de terapia de alta qualidade. Reserve agora e dê o primeiro passo em direção a uma vida mais saudável e plena.</p>
+                <a href="../estrutura/assinar.html" target="_blank" rel="external">
+                    <div id="btn-card-avulso-desktop">Agendar</div>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -125,5 +203,6 @@
             <a href="../index.html"><img src="../imagens/logo-trg-sem-nome.svg" alt="Logo TRG"></a>
         </div>
     </footer>
+    <script src="../dinamica/slider-agendar.js"></script>
 </body>
 </html>
